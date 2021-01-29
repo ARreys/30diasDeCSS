@@ -1,0 +1,94 @@
+* {
+	box-sizing: border-box;
+	--corfacebook: #4267B2;
+	--cortwitter: #1DA1F2;
+	--corgooglep: #DD4B39;
+	--corlinkedin: #0072b1;
+	--corinstagram: #bc2a8d;
+}
+
+body {
+	margin: none;
+	padding: none;
+	border: none;
+}
+
+.container {
+	position: relative;
+	height: 100vh !important;
+	display: flex;
+	align-items: center;
+	justify-content: center
+}
+
+.settings, .child1, .child2, .child3, .child4 {
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 60px;
+	width: 60px;
+	margin: 30px 30px 30px 30px;
+	-ms-transform: rotate(-30deg) skew(25deg); /* IE 9 */
+    -webkit-transform: rotate(-30deg) skew(25deg); /* Chrome, Safari, Opera */
+    transform: rotate(-30deg) skew(25deg);
+    /* PINNNNNNNNNN a ordem do transform faz diferença !!!!! */
+    transition: 1s;
+}
+
+.child1, .child2, .child3, .child4 {
+	position: absolute !important;
+}
+
+.content-facebook, .fb .child1, .fb .child2, .fb .child3, .fb .child4 {	
+	background-color: var(--corfacebook)
+}
+
+.content-twitter, .tt .child1, .tt .child2, .tt .child3, .tt .child4 {
+	background-color: var(--cortwitter)
+}
+
+.content-googlep, .gp .child1, .gp .child2, .gp .child3, .gp .child4 {
+	background-color: var(--corgooglep)
+}
+
+.content-linkedin_div, .lk .child1, .lk .child2, .lk .child3, .lk .child4 {
+	background-color: var(--corlinkedin)
+}
+
+.content-instagram,.it .child1, .it .child2, .it .child3, .it .child4 {
+	background-color: var(--corinstagram)
+}
+
+.content:hover .child1{
+	opacity: 0.2;
+	transform: rotate(-30deg) skew(25deg) translate(0, 0);
+}
+
+.content:hover .child2{
+	opacity: 0.4;
+	transform: rotate(-30deg) skew(25deg) translate(10px, -10px);
+}
+
+.content:hover .child3{
+	opacity: 0.6;
+	transform: rotate(-30deg) skew(25deg) translate(20px, -20px);
+}
+
+.content:hover .child4{
+	opacity: 0.8;
+	transform: rotate(-30deg) skew(25deg) translate(30px, -30px);
+}
+
+.content:hover .settings{
+	transform: rotate(-30deg) skew(25deg) translate(40px, -40px);
+}
+
+.settings svg {
+	position: absolute;
+	margin-left: 15px;
+	color: white;
+	height: 30px;
+	width: 30px;
+}
+
+
