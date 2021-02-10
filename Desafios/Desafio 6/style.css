@@ -92,6 +92,6 @@ span:nth-child(11) {
 @keyframes animationHeart {
     0% {
         color: rgb(249, 0, 0);
-        text-shadow: 1px 1px 10px rgb(249, 0, 0);
+        text-shadow: 0 0 7px rgb(249, 0, 0), 0 0 50px rgb(249, 0, 0);
     }
 }
