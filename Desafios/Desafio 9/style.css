@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    border: 0;
+    height: 100vh;
+    background-color: #2A3D4E;
+    display: flex;
+    justify-content: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.barra {
+    position: relative;
+    margin-top: 10%;
+    height: 15px;
+    width: 35%;
+    background-color: #ccc;
+}
+
+.div {
+    position: absolute;
+    height: 370px;
+    width: 30px;
+    transform-origin: top;
+}
+
+.vara {
+    left: 44%;
+    position: absolute;
+    height: 355px;
+    width: 3px;
+    background-color: #ccc;
+}
+
+.bola {
+    position: absolute;
+    top: 84%;
+    left: -81%;
+    border-radius: 50%;
+    background-color: #ccc;
+    height: 80px;
+    width: 80px;
+}
+
+.div:nth-child(1) {
+    left: 11%;
+    animation: esquerda 2s ease-in infinite;
+}
+
+.div:nth-child(2) {
+    left: 29%;
+}
+
+.div:nth-child(3) {
+    left: 47%;
+}
+
+.div:nth-child(4) {
+    left: 65%;
+}
+
+.div:nth-child(5) {
+    left: 83%;
+    animation: direita 2s ease-in infinite 1s;
+}
+
+@keyframes esquerda {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(60deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes direita {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-60deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
